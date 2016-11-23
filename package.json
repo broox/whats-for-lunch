@@ -1,0 +1,14 @@
+{
+  "name": "whats-for-lunch-dm",
+  "private": true,
+  "homepage": "",
+  "author": {
+    "name": "Derek Brooks",
+    "email": "derek@broox.com",
+    "url": "http://www.broox.com/"
+  },
+  "dependencies": {
+    "js-yaml": "3.7.0",
+    "vue": "2.1.0"
+  }
+}

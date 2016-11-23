@@ -1,0 +1,68 @@
+# consider making skywalk and street just boolean variables on each restaurant
+
+cuisines:
+  - &burgers "Burgers"
+  - &italian "Italian"
+  - &pizza "Pizza"
+
+# access:
+#   skywalk: &skywalk "Skywalk"
+#   street: &street "Street"
+
+restaurants:
+  - name: "Big City Burgers"
+    cuisines:
+      - *burgers
+    skywalk: true
+    street: true
+    # access:
+    #   - *skywalk
+    #   - *street
+
+  - name: "Fong's"
+    cuisines:
+      - *italian
+      - *pizza
+    skywalk: false
+    street: true
+    # access:
+    #   - *street
+
+  - name: "Local Yocals Farmhouse"
+    cuisines:
+      - *burgers
+    skywalk: true
+    street: true
+    # access:
+    #   - *skywalk
+    #   - *street
+
+# restaurants:
+#   bigcity: &bigcity
+#     name: "Big City Burgers"
+#     skywalk: true
+#     street: true
+
+#   fongs: &fongs
+#     name: "Fong's"
+#     skywalk: false
+#     street: true
+
+#   localyocals: &localyocals
+#   - name: "Local Yocals Farmhouse"
+#     skywalk: true
+#     street: true
+
+# cuisines:
+#   - name: "Burgers"
+#     restaurants:
+#       - *bigcity
+#       - *localyocals
+
+#   - name: "Italian"
+#     restaurants:
+#       - *fongs
+
+#   - name: "Pizza"
+#     restaurants:
+#       - *fongs

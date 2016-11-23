@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>What's For Lunch</title>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script src="./node_modules/js-yaml/dist/js-yaml.min.js"></script>
+  </head>
+  <body>
+
+    <div id="lunch-template" v-cloak>
+
+      <button
+        type="button"
+        v-on:click="getRandomSuggestions"
+        v-if="!suggestedCuisine">
+        What should I get?
+      </button>
+
+      <div id="suggestion" v-if="suggestedCuisine">
+        <h1 v-text="suggestedCuisine"></h1>
+        <ul class="suggested-restaurants">
+          <li v-for="restaurant in suggestedRestaurants">
+            {{ restaurant.name }}
+          </li>
+        </ul>
+
+        <button
+          type="button"
+          v-on:click="getRandomSuggestions">
+          How about something else...
+        </button>
+
+      </div>
+    </div>
+
+    <script src="./static/js/app.js"></script>
+  </body>
+</html>
