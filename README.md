@@ -8,6 +8,7 @@ This is a simple web application to fight the monotony of lunch options in downt
 
 ## Possible enhancements
 
+- update URL so that cuisines can be linked to
 - keep track of previous suggestions so as to not suggest the same thing twice in a row
 - allow user to decide whether they want to stay in the sidewalk, go outside, or either
 - allow option for Carry-out vs Dine-in
