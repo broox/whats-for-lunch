@@ -8,18 +8,14 @@
     <script src="./static/js/js-yaml.min.js"></script>
   </head>
   <body>
-
     <h1>Lunch in downtown <span>Des Moines</span></h1>
-
-    <div id="lunch-template" class="container" v-cloak>
-
+    <div id="lunch-options" class="container" v-cloak>
       <h2 class="error" v-if="error" v-text="error"></h2>
 
       <div id="suggestion" v-if="suggestedCuisine">
         <h2>
           Get some <span v-text="suggestedCuisine"></span>!!!
         </h2>
-
         <ul class="suggested-restaurants">
           <li
             v-for="restaurant in suggestedRestaurants"
@@ -36,7 +32,6 @@
         v-on:click="getRandomSuggestions"
         v-text="buttonText">
       </button>
-
     </div>
 
     <script src="./static/js/app.js"></script>

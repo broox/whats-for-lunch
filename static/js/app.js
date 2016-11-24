@@ -1,15 +1,13 @@
 var dataFile = './data/restaurants.yml';
 
 var Lunch = new Vue({
-  el: '#lunch-template',
+  el: '#lunch-options',
   data: function() {
     return {
-      accessibility: [],
       cuisines: [],
       error: null,
-      loading: true,
       restaurants: [],
-      suggestedCuisine: undefined,
+      suggestedCuisine: null,
       suggestedRestaurants: []
     };
   },
@@ -75,7 +73,6 @@ var Lunch = new Vue({
     },
     handleDataError: function() {
       // Handle any kind of error when loading restaurant data
-      this.loading = false;
       this.error = 'oops, it broke';
       this.trackEvent('data', 'load', 'error');
     },
@@ -99,6 +96,7 @@ var Lunch = new Vue({
       client.send();
     },
     lookupRestaurant: function(restaurant) {
+      // Open a google search for a given restaurant
       var url = 'https://www.google.com/search?q='+restaurant.name+', Des Moines, IA';
       var tab = window.open(url, '_blank');
       tab.focus();
@@ -107,12 +105,12 @@ var Lunch = new Vue({
     setLocalData: function(data) {
       // Translate the data from the YAML file into javascript objects
       var jsData = jsyaml.load(data);
-      this.loading = false;
       this.cuisines = jsData.cuisines;
       this.restaurants = jsData.restaurants;
       this.trackEvent('data', 'load', 'success');
     },
     trackEvent: function(category, action, label) {
+      // Track an event with Google Analytics
       if (window.ga) {
         ga('send', 'event', category, action, label);
       } else if (window.console) {
