@@ -2,6 +2,7 @@ cuisines:
   - &foodcourt "Food court stuff"
   - &bbq "BBQ"
   - &burgers "Burgers"
+  - &chinese "Chinese"
   - &japanese "Japanese"
   - &comfort "Comfort food"
   - &deli "Deli sandwiches"
@@ -140,6 +141,7 @@ restaurants:
     skywalk: false
     street: true
     cuisines:
+      - *chinese
       - *italian
       - *pizza
 
@@ -226,11 +228,23 @@ restaurants:
     cuisines:
       - *burgers
 
+  - name: "Maid Rite"
+    skywalk: true
+    street: false
+    cuisines:
+      - *burgers
+
   - name: "Malo"
     skywalk: false
     street: true
     cuisines:
       - *mexican
+
+  - name: "Michealangelo's"
+    skywalk: true
+    street: false
+    cuisines:
+      - *pizza
 
   - name: "Miyabi 9"
     skywalk: false
@@ -251,6 +265,12 @@ restaurants:
     street: false
     cuisines:
       - *deli
+
+  - name: "Panda"
+    skywalk: true
+    street: false
+    cuisines:
+      - *chinese
 
   - name: "Panera"
     skywalk: true
