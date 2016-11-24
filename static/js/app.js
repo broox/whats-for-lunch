@@ -14,6 +14,7 @@ var Lunch = new Vue({
   },
   created: function() {
     this.loadRestaurants();
+    window.onhashchange = this.getSuggestionsFromURL;
   },
   computed: {
     buttonText: function() {
@@ -41,15 +42,34 @@ var Lunch = new Vue({
     },
     getRandomSuggestions: function() {
       // Suggest a random cuisine with matching restaurant options
-      this.suggestedCuisine = this.getRandomCuisine();
-      this.suggestedRestaurants = this.filterRestaurants(this.suggestedCuisine);
-      console.log('suggesting:', this.suggestedCuisine);
-      console.log(' - ', this.suggestedRestaurants);
+      var randomCuisine = this.getRandomCuisine();
+      this.getCuisineSuggestions(randomCuisine);
+    },
+    getCuisineSuggestions: function(cuisine) {
+      // Suggest restaurants based on a given cuisine
+      cuisine = cuisine || 'food';
+      this.suggestedRestaurants = this.filterRestaurants(cuisine);
+      if (!this.suggestedRestaurants.length) {
+        this.suggestedCuisine = null;
+        this.suggestedRestaurants = [];
+        this.error = 'No ' + cuisine + ' for you';
+      } else {
+        this.suggestedCuisine = cuisine;
+        this.error = null;
+        window.location.href = '#' + cuisine;
+      }
+    },
+    getSuggestionsFromURL: function() {
+      // Suggest restaurants based on a cuisine in the URL
+      var cuisine = window.location.hash.substr(1);
+      if (cuisine) {
+        this.getCuisineSuggestions(cuisine);
+      }
     },
     handleDataError: function() {
       // Handle any kind of error when loading restaurant data
       this.loading = false;
-      alert('Error loading restaurant data');
+      this.error = 'oops, it broke';
     },
     loadRestaurants: function() {
       // Read the restaurant datafile
@@ -57,6 +77,7 @@ var Lunch = new Vue({
       client.addEventListener('load', function() {
         if (client.status === 200) {
           this.setLocalData(client.responseText);
+          this.getSuggestionsFromURL();
         } else {
           this.handleDataError();
         }
@@ -75,8 +96,6 @@ var Lunch = new Vue({
       this.loading = false;
       this.cuisines = jsData.cuisines;
       this.restaurants = jsData.restaurants;
-      console.log('cuisines:', this.cuisines);
-      console.log('restaurants:', this.restaurants);
     }
   }
 });
