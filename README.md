@@ -11,6 +11,12 @@ This is a simple web application to fight the monotony of lunch options in downt
 
 - Feel free to make suggestions by clicking the little edit/pencil icon on the top of [the datafile](https://github.com/broox/whats-for-lunch/blob/master/data/restaurants.yml)
 
+## Want to run locally?
+
+- `python -m SimpleHTTPServer 8080`
+- [localhost:8080](http://localhost:8080)
+
+
 ## Possible enhancements
 
 - keep track of previous suggestions so as to not suggest the same thing twice in a row
