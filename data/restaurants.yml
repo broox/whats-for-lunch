@@ -244,7 +244,7 @@ restaurants:
     cuisines:
       - *deli
 
-  - name: "Pho"
+  - name: "Kaleidoscope Pho"
     skywalk: true,
     street: false,
     cuisines:
