@@ -2,6 +2,11 @@
 
 This is a simple web application to fight the monotony of lunch options in downtown Des Moines. It takes a dataset of restaurants and randomly suggests a type of cuisine along with places serving that cuisine.
 
+## Try it out
+
+- [dmlunch.com](http://dmlunch.com/)
+- [broox.github.io/whats-for-lunch/](https://broox.github.io/whats-for-lunch/)
+
 ## Missing your favorite restaurant?
 
 - Feel free to make suggestions by clicking the little edit/pencil icon on the top of [the datafile](https://github.com/broox/whats-for-lunch/blob/master/data/restaurants.yml)
