@@ -1,6 +1,5 @@
-# consider making skywalk and street just boolean variables on each restaurant
-
 cuisines:
+  - &foodcourt "A food court"
   - &bbq "BBQ"
   - &burgers "Burgers"
   - &japanese "Japanese"
@@ -208,6 +207,18 @@ restaurants:
     cuisines:
       - *burgers
       - *pub
+
+  - name: "Kaleidoscope Food Court"
+    skywalk: true
+    street: true
+    cuisines:
+      - *foodcourt
+
+  - name: "Local Bites Food Court"
+    skywalk: true
+    street: true
+    cuisines:
+      - *foodcourt
 
   - name: "Local Yocals Farmhouse"
     skywalk: true
