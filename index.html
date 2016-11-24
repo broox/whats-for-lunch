@@ -21,8 +21,8 @@
         <ul class="suggested-restaurants">
           <li v-for="restaurant in suggestedRestaurants">
             {{ restaurant.name }}<br>
-            <span v-if="restaurant.skywalk" class="skywalk">S</span>
-            <span v-if="restaurant.street" title="Street access">☀️</span>
+            <span v-if="restaurant.skywalk" class="skywalk" title="Skywalk access">S</span>
+            <span v-if="restaurant.street" class="street" title="Street access">☀️</span>
           </li>
         </ul>
       </div>

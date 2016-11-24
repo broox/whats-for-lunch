@@ -67,6 +67,14 @@ h2 {
   width: 1rem;
 }
 
+.street {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1rem;
+  position: relative;
+  top: 0.25rem;
+}
+
 button {
   background-color: #3ca3e3;
   border: none;
