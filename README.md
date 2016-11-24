@@ -4,7 +4,7 @@ This is a simple web application to fight the monotony of lunch options in downt
 
 ## Missing your favorite restaurant?
 
-- Feel free to make suggestions or better yet, submit a pull request!
+- Feel free to make suggestions by clicking the little edit/pencil icon on the top of [the datafile](https://github.com/broox/whats-for-lunch/blob/master/data/restaurants.yml)
 
 ## Possible enhancements
 
