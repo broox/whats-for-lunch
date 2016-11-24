@@ -46,12 +46,6 @@ restaurants:
       - *japanese
       - *sushi
 
-  - name: "Bubba"
-    skywalk: false
-    street: true
-    cuisines:
-      - *comfort
-
   - name: "Big City Burgers"
     skywalk: true
     street: true
@@ -65,11 +59,31 @@ restaurants:
       - *italian
       - *pizza
 
+  - name: "Blu"
+    skywalk: false
+    street: true
+    cuisines:
+      - *thai
+      - *sushi
+
   - name: "Bruegger's"
     skywalk: true
     street: false
     cuisines:
       - *deli
+
+  - name: "Bubba"
+    skywalk: false
+    street: true
+    cuisines:
+      - *comfort
+
+  - name: "Buzzard Billy's"
+    skywalk: false
+    street: true
+    cuisines:
+      - *comfort
+      - *pub
 
   - name: "Centro"
     skywalk: false
@@ -133,6 +147,12 @@ restaurants:
     cuisines:
       - *mexican
 
+  - name: "Goldfinch"
+    skywalk: false
+    street: true
+    cuisines:
+      - *comfort
+
   - name: "Guru"
     skywalk: false
     street: true
@@ -156,6 +176,14 @@ restaurants:
     skywalk: false
     street: true
     cuisines:
+      - *comfort
+      - *pub
+
+  - name: "Iowa Taproom"
+    skywalk: false
+    street: true
+    cuisines:
+      - *burgers
       - *comfort
       - *pub
 
@@ -189,6 +217,13 @@ restaurants:
     street: true
     cuisines:
       - *mexican
+
+  - name: "Miyabi 9"
+    skywalk: false
+    street: true
+    cuisines:
+      - *japanese
+      - *sushi
 
   - name: "Moar Tacos"
     skywalk: true
@@ -272,7 +307,6 @@ restaurants:
     cuisines:
       - *seafood
 
-
   - name: "Teriyaki Boys"
     skywalk: true
     street: true
@@ -298,3 +332,9 @@ restaurants:
     cuisines:
       - *japanese
       - *sushi
+
+  - name: "Zombie Burger"
+    skywalk: false
+    street: true
+    cuisines:
+      - *burgers
