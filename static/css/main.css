@@ -55,6 +55,18 @@ h2 {
   background: rgba(255, 255, 255, 0.3);
 }
 
+.skywalk {
+  background-color: #B7150C;
+  border: 0.15rem solid white;
+  border-radius: 1rem;
+  display: inline-block;
+  font-size: 0.7rem;
+  height: 1rem;
+  line-height: 1rem;
+  margin-top: 0.3rem;
+  width: 1rem;
+}
+
 button {
   background-color: #3ca3e3;
   border: none;
