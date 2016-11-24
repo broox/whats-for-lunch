@@ -1,5 +1,5 @@
 cuisines:
-  - &foodcourt "A food court"
+  - &foodcourt "Food court stuff"
   - &bbq "BBQ"
   - &burgers "Burgers"
   - &japanese "Japanese"
