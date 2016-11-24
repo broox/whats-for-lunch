@@ -1,21 +1,56 @@
 # consider making skywalk and street just boolean variables on each restaurant
 
 cuisines:
+  - &bbq "BBQ"
   - &burgers "Burgers"
+  - &japanese "Japanese"
+  - &comfort "Comfort food"
   - &deli "Deli sandwiches"
+  - &french "French"
   - &italian "Italian"
+  - &korean "Korean"
   - &mexican "Mexican"
   - &pizza "Pizza"
+  - &pub "Pub food"
+  - &seafood "Seafood"
   - &sushi "Sushi"
   - &thai "Thai"
   - &vietnamese "Vietnamese"
 
 restaurants:
-  - name: "Akebono"
-    skywalk: true,
+  - name: "1908 Draught House"
+    skywalk: false
     street: true
     cuisines:
+      - *burgers
+      - *comfort
+      - *pub
+
+  - name: "Amigos"
+    skywalk: true
+    street: false
+    cuisines:
+      - *mexican
+
+  - name: "Americana"
+    skywalk: false
+    street: true
+    cuisines:
+      - *comfort
+      - *burgers
+
+  - name: "Akebono"
+    skywalk: true
+    street: true
+    cuisines:
+      - *japanese
       - *sushi
+
+  - name: "Bubba"
+    skywalk: false
+    street: true
+    cuisines:
+      - *comfort
 
   - name: "Big City Burgers"
     skywalk: true
@@ -30,6 +65,12 @@ restaurants:
       - *italian
       - *pizza
 
+  - name: "Bruegger's"
+    skywalk: true
+    street: false
+    cuisines:
+      - *deli
+
   - name: "Centro"
     skywalk: false
     street: true
@@ -37,11 +78,48 @@ restaurants:
       - *italian
       - *pizza
 
+  - name: "Court Avenue Brewery"
+    skywalk: true
+    street: true
+    cuisines:
+      - *burgers
+      - *comfort
+      - *pub
+
   - name: "Des Banh"
-    skywalk: true,
-    street: true,
+    skywalk: true
+    street: true
     cuisines:
       - *vietnamese
+
+  - name: "Django"
+    skywalk: false
+    street: true
+    cuisines:
+      - *french
+
+  - name: "El Bait Shop"
+    skywalk: false
+    street: true
+    cuisines:
+      - *comfort
+      - *mexican
+      - *pub
+
+  - name: "Exile"
+    skywalk: false
+    street: true
+    cuisines:
+      - *burgers
+      - *comfort
+      - *pub
+
+  - name: "Fighting Burrito"
+    skywalk: true
+    street: true
+    cuisines:
+      - *korean
+      - *mexican
 
   - name: "Fong's"
     skywalk: false
@@ -51,28 +129,74 @@ restaurants:
       - *pizza
 
   - name: "Fuzzy's Tacos"
-    skywalk: false,
+    skywalk: false
     street: true
     cuisines:
       - *mexican
 
+  - name: "Guru"
+    skywalk: false
+    street: true
+    cuisines:
+      - *bbq
+
+  - name: "Happi Sushi"
+    skywalk: true
+    street: false
+    cuisines:
+      - *sushi
+
+  - name: "Hessen Haus"
+    skywalk: false
+    street: true
+    cuisines:
+      - *comfort
+      - *pub
+
+  - name: "High Life Lounge"
+    skywalk: false
+    street: true
+    cuisines:
+      - *comfort
+      - *pub
+
   - name: "Jimmy John's"
-    skywalk: true,
+    skywalk: true
     street: true
     cuisines:
       - *deli
 
   - name: "JJ Jasmine"
-    skywalk: true,
-    street: false,
+    skywalk: true
+    street: false
     cuisines:
       - *thai
+
+  - name: "Johnny's"
+    skywalk: false
+    street: true
+    cuisines:
+      - *burgers
+      - *pub
 
   - name: "Local Yocals Farmhouse"
     skywalk: true
     street: true
     cuisines:
       - *burgers
+
+  - name: "Malo"
+    skywalk: false
+    street: true
+    cuisines:
+      - *mexican
+
+  - name: "Moar Tacos"
+    skywalk: true
+    street: true
+    cuisines:
+      - *korean
+      - *mexican
 
   - name: "Palmer's"
     skywalk: true
@@ -81,7 +205,7 @@ restaurants:
       - *deli
 
   - name: "Panera"
-    skywalk: true,
+    skywalk: true
     street: true
     cuisines:
       - *deli
@@ -93,16 +217,36 @@ restaurants:
       - *vietnamese
 
   - name: "Pita Pit"
-    skywalk: false,
+    skywalk: false
     street: true
     cuisines:
       - *deli
 
-  - name: "Scenic Route"
-    skywalk: false,
+  - name: "Quinton's"
+    skywalk: false
     street: true
     cuisines:
       - *deli
+
+  - name: "Royal Mile"
+    skywalk: false
+    street: true
+    cuisines:
+      - *burgers
+      - *comfort
+      - *pub
+
+  - name: "Scenic Route"
+    skywalk: false
+    street: true
+    cuisines:
+      - *deli
+
+  - name: "Smokey D's"
+    skywalk: true
+    street: true
+    cuisines:
+      - *bbq
 
   - name: "Something Italian"
     skywalk: true
@@ -112,13 +256,46 @@ restaurants:
       - *pizza
 
   - name: "South Union"
-    skywalk: false,
+    skywalk: false
     street: true
     cuisines:
       - *deli
 
-  - name: "Wasabi Tao"
-    skywalk: true,
+  - name: "Spaghetti Works"
+    skywalk: false
     street: true
     cuisines:
+      - *italian
+
+  - name: "Splash"
+    skywalk: false
+    street: true
+    cuisines:
+      - *seafood
+
+
+  - name: "Teriyaki Boys"
+    skywalk: true
+    street: true
+    cuisines:
+      - *japanese
+
+  - name: "Vivian's"
+    skywalk: true
+    street: true
+    cuisines:
+      - *burgers
+      - *comfort
+
+  - name: "Viva Mexico"
+    skywalk: true
+    street: true
+    cuisines:
+      - *mexican
+
+  - name: "Wasabi Tao"
+    skywalk: true
+    street: true
+    cuisines:
+      - *japanese
       - *sushi
