@@ -3,6 +3,7 @@
   <head>
     <title>What's for lunch in downtown Des Moines</title>
     <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script src="./static/js/vue.min.js"></script>
     <script src="./static/js/js-yaml.min.js"></script>
@@ -22,7 +23,8 @@
             v-on:click="lookupRestaurant(restaurant)">
             {{ restaurant.name }}<br>
             <span v-if="restaurant.skywalk" class="skywalk" title="Skywalk access">S</span>
-            <span v-if="restaurant.street" class="street" title="Street access">☀️</span>
+            <span v-if="restaurant.street" class="street" title="Street access"><i class="fa fa-sun-o" aria-hidden="true"></i></span>
+            <span v-if="restaurant.deliver" class="deliver" title="Delivers"><i class="fa fa-truck" aria-hidden="true"></i></span>
           </li>
         </ul>
       </div>

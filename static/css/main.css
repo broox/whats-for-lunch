@@ -79,6 +79,15 @@ h2 {
   line-height: 1rem;
   position: relative;
   top: 0.25rem;
+  color: yellow;
+}
+
+.deliver {
+  display: inline-block;
+  font-size: 1r`;
+  line-height: 1rem;
+  position: relative;
+  top: 0.25rem;
 }
 
 button {

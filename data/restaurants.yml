@@ -134,6 +134,7 @@ restaurants:
   - name: "Fighting Burrito"
     skywalk: true
     street: true
+    deliver: true
     cuisines:
       - *mexican
 
@@ -194,6 +195,7 @@ restaurants:
   - name: "Jimmy John's"
     skywalk: true
     street: true
+    deliver: true
     cuisines:
       - *deli
 
@@ -263,6 +265,7 @@ restaurants:
   - name: "Palmer's"
     skywalk: true
     street: false
+    deliver: true
     cuisines:
       - *deli
 
@@ -275,6 +278,7 @@ restaurants:
   - name: "Panera"
     skywalk: true
     street: true
+    deliver: true
     cuisines:
       - *deli
 
