@@ -118,7 +118,6 @@ restaurants:
     skywalk: true
     street: true
     cuisines:
-      - *korean
       - *mexican
 
   - name: "Fong's"
