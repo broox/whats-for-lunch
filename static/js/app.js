@@ -37,7 +37,11 @@ var Lunch = new Vue({
       var min = 0;
       var max = this.cuisines.length;
       var index = Math.floor(Math.random() * (max - min)) + min;
-      return this.cuisines[index];
+      var newcuisine = {};
+
+      newcuisine = this.suggestedCuisine == this.cuisines[index] ? this.getRandomCuisine() : this.cuisines[index];
+
+      return newcuisine;
     },
     getRandomSuggestions: function() {
       // Suggest a random cuisine with matching restaurant options
