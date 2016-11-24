@@ -6,6 +6,7 @@ var Lunch = new Vue({
     return {
       accessibility: [],
       cuisines: [],
+      error: null,
       loading: true,
       restaurants: [],
       suggestedCuisine: undefined,
