@@ -49,10 +49,16 @@ h2 {
 }
 
 .suggested-restaurants li {
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 0.5rem;
+  cursor: pointer;
   margin: 0 1rem 1rem;
   padding: 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.3);
+  transition: background-color .5s ease;
+}
+
+.suggested-restaurants li:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .skywalk {

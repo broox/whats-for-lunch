@@ -91,6 +91,11 @@ var Lunch = new Vue({
       client.open('GET', dataFile);
       client.send();
     },
+    lookupRestaurant: function(restaurant) {
+      var url = 'https://www.google.com/search?q='+restaurant.name+', Des Moines, IA';
+      var tab = window.open(url, '_blank');
+      tab.focus();
+    },
     setLocalData: function(data) {
       // Translate the data from the YAML file into javascript objects
       var jsData = jsyaml.load(data);
