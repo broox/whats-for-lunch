@@ -2,67 +2,123 @@
 
 cuisines:
   - &burgers "Burgers"
+  - &deli "Deli sandwiches"
   - &italian "Italian"
+  - &mexican "Mexican"
   - &pizza "Pizza"
-
-# access:
-#   skywalk: &skywalk "Skywalk"
-#   street: &street "Street"
+  - &sushi "Sushi"
+  - &thai "Thai"
+  - &vietnamese "Vietnamese"
 
 restaurants:
-  - name: "Big City Burgers"
+  - name: "Akebono"
+    skywalk: true,
+    street: true
     cuisines:
-      - *burgers
+      - *sushi
+
+  - name: "Big City Burgers"
     skywalk: true
     street: true
-    # access:
-    #   - *skywalk
-    #   - *street
+    cuisines:
+      - *burgers
 
-  - name: "Fong's"
+  - name: "Blaze"
+    skywalk: false
+    street: true
     cuisines:
       - *italian
       - *pizza
+
+  - name: "Centro"
     skywalk: false
     street: true
-    # access:
-    #   - *street
+    cuisines:
+      - *italian
+      - *pizza
+
+  - name: "Des Banh"
+    skywalk: true,
+    street: true,
+    cuisines:
+      - *vietnamese
+
+  - name: "Fong's"
+    skywalk: false
+    street: true
+    cuisines:
+      - *italian
+      - *pizza
+
+  - name: "Fuzzy's Tacos"
+    skywalk: false,
+    street: true
+    cuisines:
+      - *mexican
+
+  - name: "Jimmy John's"
+    skywalk: true,
+    street: true
+    cuisines:
+      - *deli
+
+  - name: "JJ Jasmine"
+    skywalk: true,
+    street: false,
+    cuisines:
+      - *thai
 
   - name: "Local Yocals Farmhouse"
-    cuisines:
-      - *burgers
     skywalk: true
     street: true
-    # access:
-    #   - *skywalk
-    #   - *street
+    cuisines:
+      - *burgers
 
-# restaurants:
-#   bigcity: &bigcity
-#     name: "Big City Burgers"
-#     skywalk: true
-#     street: true
+  - name: "Palmer's"
+    skywalk: true
+    street: false
+    cuisines:
+      - *deli
 
-#   fongs: &fongs
-#     name: "Fong's"
-#     skywalk: false
-#     street: true
+  - name: "Panera"
+    skywalk: true,
+    street: true
+    cuisines:
+      - *deli
 
-#   localyocals: &localyocals
-#   - name: "Local Yocals Farmhouse"
-#     skywalk: true
-#     street: true
+  - name: "Pho"
+    skywalk: true,
+    street: false,
+    cuisines:
+      - *vietnamese
 
-# cuisines:
-#   - name: "Burgers"
-#     restaurants:
-#       - *bigcity
-#       - *localyocals
+  - name: "Pita Pit"
+    skywalk: false,
+    street: true
+    cuisines:
+      - *deli
 
-#   - name: "Italian"
-#     restaurants:
-#       - *fongs
+  - name: "Scenic Route"
+    skywalk: false,
+    street: true
+    cuisines:
+      - *deli
 
-#   - name: "Pizza"
-#     restaurants:
-#       - *fongs
+  - name: "Something Italian"
+    skywalk: true
+    street: false
+    cuisines:
+      - *italian
+      - *pizza
+
+  - name: "South Union"
+    skywalk: false,
+    street: true
+    cuisines:
+      - *deli
+
+  - name: "Wasabi Tao"
+    skywalk: true,
+    street: true
+    cuisines:
+      - *sushi
