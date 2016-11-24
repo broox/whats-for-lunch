@@ -2,35 +2,36 @@
 <html lang="en">
   <head>
     <title>What's For Lunch</title>
+    <link rel="stylesheet" href="./static/css/main.css">
     <script src="./static/js/vue.min.js"></script>
     <script src="./static/js/js-yaml.min.js"></script>
   </head>
   <body>
 
-    <div id="lunch-template" v-cloak>
+    <h1>Lunch in downtown Des Moines</h1>
+
+    <div id="lunch-template" class="container" v-cloak>
+
+      <div id="suggestion" v-if="suggestedCuisine">
+        <h2>
+          Get some <span v-text="suggestedCuisine"></span>!!!
+        </h2>
+
+        <ul class="suggested-restaurants">
+          <li v-for="restaurant in suggestedRestaurants">
+            {{ restaurant.name }}<br>
+            <span v-if="restaurant.skywalk" title="Skywalk access">🌦</span>
+            <span v-if="restaurant.street" title="Street access">☀️</span>
+          </li>
+        </ul>
+      </div>
 
       <button
         type="button"
         v-on:click="getRandomSuggestions"
-        v-if="!suggestedCuisine">
-        What should I get?
+        v-text="buttonText">
       </button>
 
-      <div id="suggestion" v-if="suggestedCuisine">
-        <h1 v-text="suggestedCuisine"></h1>
-        <ul class="suggested-restaurants">
-          <li v-for="restaurant in suggestedRestaurants">
-            {{ restaurant.name }}
-          </li>
-        </ul>
-
-        <button
-          type="button"
-          v-on:click="getRandomSuggestions">
-          How about something else...
-        </button>
-
-      </div>
     </div>
 
     <script src="./static/js/app.js"></script>

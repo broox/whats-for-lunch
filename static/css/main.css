@@ -1,0 +1,76 @@
+html, body {
+  color: #fff;
+  font-family: helvetica, arial;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  background-image: url(../img/background.png);
+  background-position: center;
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 3rem 0 1rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.suggested-restaurants {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggested-restaurants li {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+}
+
+button {
+  background-color: #3ca3e3;
+  border: none;
+  border-radius: 10rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 1.5rem;
+  padding: 1.2rem 2rem;
+  transition: background-color .5s ease;
+}
+
+button:active {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #0072b9;
+  outline: none;
+}

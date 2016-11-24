@@ -15,6 +15,11 @@ var Lunch = new Vue({
   created: function() {
     this.loadRestaurants();
   },
+  computed: {
+    buttonText: function() {
+      return this.suggestedCuisine ? "How about something else?" : "What's for lunch?";
+    }
+  },
   methods: {
     filterRestaurants: function(cuisine) {
       // Filter restaurants by a given cuisine
