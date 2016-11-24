@@ -33,7 +33,7 @@ h2 {
 .container {
   background: rgba(255, 255, 255, 0.3);
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -95,7 +95,6 @@ button {
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
-  margin: 1.5rem;
   padding: 1.2rem 2rem;
   transition: background-color .5s ease;
 }
@@ -124,6 +123,7 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
+
 
 @media screen and (min-width: 640px) {
   h1 {
