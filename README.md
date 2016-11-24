@@ -13,9 +13,9 @@ This is a simple web application to fight the monotony of lunch options in downt
 
 ## Want to run locally?
 
-- `python -m SimpleHTTPServer 8080`
-- [localhost:8080](http://localhost:8080)
-
+- First run `npm install`
+- Then start the server via: `python -m SimpleHTTPServer 8080`
+- And now browse to: [localhost:8080](http://localhost:8080)
 
 ## Possible enhancements
 
