@@ -4,7 +4,7 @@ This is a simple web application to fight the monotony of lunch options in downt
 
 ## Try it out
 
-- [dmlunch.com](dmlunch.com)
+- [dmlunch.com](http://dmlunch.com/)
 - [broox.github.io/whats-for-lunch/](https://broox.github.io/whats-for-lunch/)
 
 ## Missing your favorite restaurant?
