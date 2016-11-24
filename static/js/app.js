@@ -45,6 +45,7 @@ var Lunch = new Vue({
       // Suggest a random cuisine with matching restaurant options
       var randomCuisine = this.getRandomCuisine();
       this.getCuisineSuggestions(randomCuisine);
+      this.trackEvent('cuisine', 'random', randomCuisine);
     },
     getCuisineSuggestions: function(cuisine) {
       // Suggest restaurants based on a given cuisine
@@ -54,10 +55,12 @@ var Lunch = new Vue({
         this.suggestedCuisine = null;
         this.suggestedRestaurants = [];
         this.error = 'No ' + cuisine + ' for you';
+        this.trackEvent('cuisine', 'not found', cuisine);
       } else {
         this.suggestedCuisine = cuisine;
         this.error = null;
         window.location.href = '#' + cuisine;
+        this.trackEvent('cuisine', 'found', this.suggestedRestaurants.length + ' restaurants');
       }
     },
     getSuggestionsFromURL: function() {
@@ -65,12 +68,16 @@ var Lunch = new Vue({
       var cuisine = window.location.hash.substr(1);
       if (cuisine) {
         this.getCuisineSuggestions(cuisine);
+        this.trackEvent('cuisine', 'url', cuisine);
+      } else {
+        this.trackEvent('cuisine', 'url', '');
       }
     },
     handleDataError: function() {
       // Handle any kind of error when loading restaurant data
       this.loading = false;
       this.error = 'oops, it broke';
+      this.trackEvent('data', 'load', 'error');
     },
     loadRestaurants: function() {
       // Read the restaurant datafile
@@ -95,6 +102,7 @@ var Lunch = new Vue({
       var url = 'https://www.google.com/search?q='+restaurant.name+', Des Moines, IA';
       var tab = window.open(url, '_blank');
       tab.focus();
+      this.trackEvent('restaurant', 'lookup', restaurant.name);
     },
     setLocalData: function(data) {
       // Translate the data from the YAML file into javascript objects
@@ -102,6 +110,14 @@ var Lunch = new Vue({
       this.loading = false;
       this.cuisines = jsData.cuisines;
       this.restaurants = jsData.restaurants;
+      this.trackEvent('data', 'load', 'success');
+    },
+    trackEvent: function(category, action, label) {
+      if (window.ga) {
+        ga('send', 'event', category, action, label);
+      } else if (window.console) {
+        console.log(category, action, label);
+      }
     }
   }
 });
