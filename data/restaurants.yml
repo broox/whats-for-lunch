@@ -22,6 +22,7 @@ restaurants:
   - name: "1908 Draught House"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *burgers
       - *comfort
@@ -36,6 +37,7 @@ restaurants:
   - name: "Americana"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *comfort
       - *burgers
@@ -43,6 +45,7 @@ restaurants:
   - name: "Akebono"
     skywalk: true
     street: true
+    drinks: true
     cuisines:
       - *japanese
       - *sushi
@@ -76,6 +79,7 @@ restaurants:
   - name: "Bubba"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *comfort
       - *southern
@@ -83,6 +87,7 @@ restaurants:
   - name: "Buzzard Billy's"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *comfort
       - *pub
@@ -91,6 +96,7 @@ restaurants:
   - name: "Centro"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *italian
       - *pizza
@@ -98,6 +104,7 @@ restaurants:
   - name: "Court Avenue Brewery"
     skywalk: true
     street: true
+    drinks: true
     cuisines:
       - *burgers
       - *comfort
@@ -112,12 +119,14 @@ restaurants:
   - name: "Django"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *french
 
   - name: "El Bait Shop"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *comfort
       - *mexican
@@ -126,6 +135,7 @@ restaurants:
   - name: "Exile"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *burgers
       - *comfort
@@ -141,6 +151,7 @@ restaurants:
   - name: "Fong's"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *chinese
       - *italian
@@ -173,6 +184,7 @@ restaurants:
   - name: "Hessen Haus"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *comfort
       - *pub
@@ -180,6 +192,7 @@ restaurants:
   - name: "High Life Lounge"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *comfort
       - *pub
@@ -187,6 +200,7 @@ restaurants:
   - name: "Iowa Taproom"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *burgers
       - *comfort
@@ -208,6 +222,7 @@ restaurants:
   - name: "Johnny's"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *burgers
       - *pub
@@ -239,6 +254,7 @@ restaurants:
   - name: "Malo"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *mexican
 
@@ -251,6 +267,7 @@ restaurants:
   - name: "Miyabi 9"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *japanese
       - *sushi
@@ -303,6 +320,7 @@ restaurants:
   - name: "Royal Mile"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *burgers
       - *comfort
@@ -317,6 +335,7 @@ restaurants:
   - name: "Smokey D's"
     skywalk: true
     street: true
+    drinks: true
     cuisines:
       - *bbq
 
@@ -336,12 +355,14 @@ restaurants:
   - name: "Spaghetti Works"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *italian
 
   - name: "Splash"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *seafood
 
@@ -367,6 +388,7 @@ restaurants:
   - name: "Wasabi Tao"
     skywalk: true
     street: true
+    drinks: true
     cuisines:
       - *japanese
       - *sushi
@@ -374,5 +396,6 @@ restaurants:
   - name: "Zombie Burger"
     skywalk: false
     street: true
+    drinks: true
     cuisines:
       - *burgers
