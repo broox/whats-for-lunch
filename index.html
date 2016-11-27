@@ -14,11 +14,6 @@
   <body>
     <h1>Lunch in downtown <span>Des Moines</span></h1>
     <div id="lunch-options" class="container" v-cloak>
-      <button
-        type="button"
-        v-on:click="getRandomSuggestions"
-        v-text="buttonText">
-      </button>
       <h2 class="error" v-if="error" v-text="error"></h2>
 
       <div id="suggestion" v-if="suggestedCuisine">
@@ -37,6 +32,13 @@
           </li>
         </ul>
       </div>
+
+      <button
+        type="button"
+        v-on:click="getRandomSuggestions"
+        v-text="buttonText">
+      </button>
+
     </div>
     <footer>
       Made by <a href="http://www.broox.com">broox</a>. Contribute on <a href="https://github.com/broox/whats-for-lunch">GitHub</a>.
