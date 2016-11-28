@@ -1,14 +1,19 @@
 cuisines:
-  - &foodcourt "Food court stuff"
+  - &american "American"
   - &bbq "BBQ"
   - &burgers "Burgers"
   - &chinese "Chinese"
-  - &japanese "Japanese"
   - &comfort "Comfort food"
+  - &cuban "Cuban"
   - &deli "Deli sandwiches"
+  - &foodcourt "Food court stuff"
   - &french "French"
+  - &german "German"
+  - &greek "Greek"
   - &italian "Italian"
+  - &japanese "Japanese"
   - &korean "Korean"
+  - &mediterranean "Mediterranean"
   - &mexican "Mexican"
   - &pizza "Pizza"
   - &pub "Pub food"
@@ -19,14 +24,28 @@ cuisines:
   - &vietnamese "Vietnamese"
 
 restaurants:
+  - name: "+39"
+    skywalk: false
+    street: true
+    drinks: true
+    cuisines:
+      - *italian
+
   - name: "1908 Draught House"
     skywalk: false
     street: true
     drinks: true
     cuisines:
+      - *american
       - *burgers
       - *comfort
       - *pub
+
+  - name: "A Dong"
+    skywalk: false
+    street: true
+    cuisines:
+      - *vietnamese
 
   - name: "Amigos"
     skywalk: true
@@ -39,6 +58,7 @@ restaurants:
     street: true
     drinks: true
     cuisines:
+      - *american
       - *comfort
       - *burgers
 
@@ -84,6 +104,12 @@ restaurants:
       - *comfort
       - *southern
 
+  - name: "Burger Shop"
+    skywalk: true
+    street: true
+    cuisines:
+      - *burgers
+
   - name: "Buzzard Billy's"
     skywalk: false
     street: true
@@ -101,11 +127,19 @@ restaurants:
       - *italian
       - *pizza
 
+  - name: "Ceviche"
+    skywalk: false
+    street: true
+    drinks: true
+    cuisines:
+      - *cuban
+
   - name: "Court Avenue Brewery"
     skywalk: true
     street: true
     drinks: true
     cuisines:
+      - *american
       - *burgers
       - *comfort
       - *pub
@@ -137,6 +171,7 @@ restaurants:
     street: true
     drinks: true
     cuisines:
+      - *american
       - *burgers
       - *comfort
       - *pub
@@ -167,7 +202,14 @@ restaurants:
     skywalk: false
     street: true
     cuisines:
+      - *american
       - *comfort
+
+  - name: "Gringo's"
+    skywalk: true
+    street: false
+    cuisines:
+      - *mexican
 
   - name: "Guru"
     skywalk: false
@@ -187,6 +229,7 @@ restaurants:
     drinks: true
     cuisines:
       - *comfort
+      - *german
       - *pub
 
   - name: "High Life Lounge"
@@ -197,11 +240,19 @@ restaurants:
       - *comfort
       - *pub
 
+  - name: "Hoq"
+    skywalk: false
+    street: true
+    drinks: true
+    cuisines:
+      - *american
+
   - name: "Iowa Taproom"
     skywalk: false
     street: true
     drinks: true
     cuisines:
+      - *american
       - *burgers
       - *comfort
       - *pub
@@ -212,6 +263,14 @@ restaurants:
     deliver: true
     cuisines:
       - *deli
+
+  - name: "Jimmy's Gyros"
+    skywalk: true
+    street: true
+    deliver: false
+    cuisines:
+      - *greek
+      - *mediterranean
 
   - name: "JJ Jasmine"
     skywalk: true
@@ -233,6 +292,22 @@ restaurants:
     cuisines:
       - *foodcourt
 
+  - name: "La Mie Express"
+    skywalk: true
+    street: true
+    cuisines:
+      - *french
+
+  - name: "Legends"
+    skywalk: false
+    street: true
+    drinks: true
+    cuisines:
+      - *american
+      - *burgers
+      - *comfort
+      - *pub
+
   - name: "Local Bites Food Court"
     skywalk: true
     street: true
@@ -244,6 +319,15 @@ restaurants:
     street: true
     cuisines:
       - *burgers
+
+  - name: "Magnolia"
+    skywalk: false
+    street: true
+    drinks: true
+    cuisines:
+      - *american
+      - *burgers
+      - *comfort
 
   - name: "Maid Rite"
     skywalk: true
@@ -279,6 +363,19 @@ restaurants:
       - *korean
       - *mexican
 
+  - name: "Noodle Zoo"
+    skywalk: false
+    street: true
+    cuisines:
+      - *italian
+
+  - name: "Olympic Flame"
+    skywalk: false
+    street: true
+    cuisines:
+      - *greek
+      - *mediterranean
+
   - name: "Palmer's"
     skywalk: true
     street: false
@@ -305,6 +402,12 @@ restaurants:
     cuisines:
       - *vietnamese
 
+  - name: "Open Sesame"
+    skywalk: false
+    street: true
+    cuisines:
+      - *mediterranean
+
   - name: "Pita Pit"
     skywalk: false
     street: true
@@ -316,6 +419,12 @@ restaurants:
     street: true
     cuisines:
       - *deli
+
+  - name: "Ritual Cafe"
+    skywalk: false
+    street: true
+    cuisines:
+      - *american
 
   - name: "Royal Mile"
     skywalk: false
@@ -366,6 +475,20 @@ restaurants:
     cuisines:
       - *seafood
 
+  - name: "Tacopacolypse"
+    skywalk: false
+    street: true
+    cuisines:
+      - *korean
+      - *mexican
+
+  - name: "Taste Spuds"
+    skywalk: true
+    street: false
+    cuisines:
+      - *american
+      - *comfort
+
   - name: "Teriyaki Boys"
     skywalk: true
     street: true
@@ -376,6 +499,7 @@ restaurants:
     skywalk: true
     street: true
     cuisines:
+      - *american
       - *burgers
       - *comfort
 
