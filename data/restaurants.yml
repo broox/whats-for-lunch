@@ -10,6 +10,7 @@ cuisines:
   - &french "French"
   - &german "German"
   - &greek "Greek"
+  - &indian "Indian"
   - &italian "Italian"
   - &japanese "Japanese"
   - &korean "Korean"
@@ -246,6 +247,12 @@ restaurants:
     drinks: true
     cuisines:
       - *american
+
+  - name: "Indian Pointe"
+    skywalk: true
+    street: true
+    cuisines:
+      - *indian
 
   - name: "Iowa Taproom"
     skywalk: false
