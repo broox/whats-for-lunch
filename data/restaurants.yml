@@ -248,7 +248,7 @@ restaurants:
     cuisines:
       - *american
 
-  - name: "Indian Pointe"
+  - name: "India Pointe"
     skywalk: true
     street: true
     cuisines:
